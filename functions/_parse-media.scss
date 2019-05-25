@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@function _parse-media($media) {
+  @if type-of($media) == number {
+    @return "only screen and (min-width: #{$media})";
+  } @else if type-of($media) == string {
+    @return "#{$media}";
+  }
+}

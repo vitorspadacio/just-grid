@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+%base-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin row($grid: $just-grid) {
+  @extend %base-row;
+  margin-left: - _retrieve-setting($grid, gap);
+}
+
+@mixin vertical-row($grid: $just-grid) {
+  @extend %base-row;
+  flex-direction: column;
+  justify-content: unset;
+  margin-left: - _retrieve-setting($grid, gap);
+}

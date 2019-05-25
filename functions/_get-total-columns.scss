@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@function _get-total-columns($grid, $columns) {
+  @if length($columns) == 3 {
+    @return _parse-total-columns($columns);
+  } @else {
+    @return _retrieve-setting($grid, columns);
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "just-grid",
+  "version": "1.0.0",
+  "description": "Just is a simples grid SASS library.",
+  "main": "just.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vsp193",
+  "license": "ISC",
+  "repository": "https://github.com/vsp193/just-grid.git"
+}

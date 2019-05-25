@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@mixin column($columns: null, $grid: $just-grid) {
+  $_columns: _get-columns($columns);
+  $_gap: _retrieve-setting($grid, gap);
+  $_total-columns: _get-total-columns($grid, $columns);
+
+  $_column-ratio: $_columns / $_total-columns;
+
+  margin-left: $_gap;
+  width: calc(#{$_column-ratio} * 100% - #{$_gap});
+}

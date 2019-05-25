@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@function _get-columns($columns) {
+  @if $columns != null & length($columns) > 0 {
+    @return nth($columns, 1);
+  } @else {
+    @return 1;
+  }
+}

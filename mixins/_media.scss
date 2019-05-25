@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@mixin media($grids...) {
+  @each $_grid in $grids {
+    $_media: _retrieve-setting($_grid, media);
+    $_query: _parse-media($_media);
+
+    @media #{$_query} {
+      $_default-grid: $just-grid;
+      $just-grid: map-merge($just-grid, $_grid) !global;
+      @content;
+      $just-grid: $_default-grid !global;
+    }
+  }
+}

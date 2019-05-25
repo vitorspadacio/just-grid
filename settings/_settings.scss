@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+$small-screen: (media: 576px);
+$medium-screen: (media: 768px);
+$large-screen: (media: 992px);
+$xlarge-screen: (media: 1200px);
+
+$sm: $small-screen;
+$md: $medium-screen;
+$lg: $large-screen;
+$xl: $xlarge-screen;
+
+$just-grid: (columns: 12, gap: 1rem, media: $sm) !default;
+$custom-grid: () !default;
