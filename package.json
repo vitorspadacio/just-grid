@@ -1,7 +1,7 @@
 {
   "name": "just-grid",
-  "version": "1.0.2",
-  "description": "Just is a simples grid SASS library.",
+  "version": "1.0.3",
+  "description": "Just is a simple grid SASS library.",
   "main": "just.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
