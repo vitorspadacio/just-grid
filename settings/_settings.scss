@@ -10,5 +10,4 @@ $md: $medium-screen;
 $lg: $large-screen;
 $xl: $xlarge-screen;
 
-$just-grid: (columns: 12, gap: 1rem, media: $sm) !default;
-$custom-grid: () !default;
+$just-grid: (columns: 12, gap: 1rem, media: $xl) !default;
