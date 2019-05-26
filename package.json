@@ -1,6 +1,6 @@
 {
   "name": "just-grid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Just is a simple grid SASS library.",
   "main": "just.scss",
   "scripts": {
