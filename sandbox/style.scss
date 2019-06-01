@@ -1,0 +1,41 @@
+@import "lib/just";
+
+#line {
+  @include row();
+
+  div {
+    background-color: red;
+  }
+}
+
+#sequencial-line {
+  @include row();
+
+  div {
+    background-color: blue;
+  }
+}
+
+section {
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+div {
+  @include column(4 of 4);
+  align-items: center;
+  border: 2px solid grey;
+  color: white;
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+
+  @include media($sm) {
+    @include column(2 of 4);
+  }
+
+  @include media($lg) {
+    @include column(1 of 4);
+  }
+}

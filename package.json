@@ -1,12 +1,30 @@
 {
   "name": "just-grid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Just is a simple grid SASS library.",
-  "main": "just.scss",
+  "keywords": [
+    "columns",
+    "grid",
+    "layout",
+    "media",
+    "media-queries",
+    "just",
+    "just-grid",
+    "queries",
+    "sass",
+    "scss",
+    "semantic"
+  ],
+  "main": "index.js",
+  "style": "lib/_just.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel sandbox/index.html"
   },
   "author": "vsp193",
   "license": "ISC",
-  "repository": "https://github.com/vsp193/just-grid.git"
+  "repository": "https://github.com/vsp193/just-grid.git",
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "sass": "^1.20.3"
+  }
 }
